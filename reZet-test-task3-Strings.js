@@ -11,7 +11,7 @@ let strings = [
     stringArray1, stringArray2, stringArray3, stringArray4, stringArray5
 ]
 
-console.log("Source strings: ")
+console.log('Source strings: ')
 console.log(strings)
 
 stringFormat(strings)
@@ -52,8 +52,8 @@ function stringFormat(string) {
              * Пробелы и расстояния до них
              */
             let middle = Math.floor(resArray[i].length / 2)
-            let before = resArray[i].lastIndexOf(" ", middle)
-            let after = resArray[i].lastIndexOf(" ", middle + 1)
+            let before = resArray[i].lastIndexOf(' ', middle)
+            let after = resArray[i].lastIndexOf(' ', middle + 1)
 
             if (middle - before < after - middle) {
                 middle = before
@@ -61,9 +61,9 @@ function stringFormat(string) {
 
 
             // Вставка с удалением (замена) предыдущей строки на нашу
-            resArray.splice(i, 0, "*    " + resArray[i].substring(0, middle) + "*")
+            resArray.splice(i, 0, '*    ' + resArray[i].substring(0, middle) + '*')
             i++
-            resArray.splice(i, 1, "*    " + resArray[i].substring(middle + 1) + "*")
+            resArray.splice(i, 1, '*    ' + resArray[i].substring(middle + 1) + '*')
         }
     }
 

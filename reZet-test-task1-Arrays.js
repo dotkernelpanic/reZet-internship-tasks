@@ -32,13 +32,13 @@ function checkArray(array) {
             // var1 > var2 < var3 OR var1 < var2 > var3. Если верно что-то из этого - пишем в массив 1 (true)
             if ( (array[i] > array[j] && array[j] < array[j+1]) || 
                     (array[i] < array[j] && array[j] > array[j+1]) ) {
-                console.log("Adding 1 to res array because one of rules is true.")
-                console.log("Array elements: " + array[i] + " " + array[j] + " " + array[j+1])
+                console.log('Adding 1 to res array because one of rules is true.')
+                console.log('Array elements: ' + array[i] + ' ' + array[j] + ' ' + array[j+1])
                 resultArray.push(1)
                 // Или пишем в массив 0 (false)
             } else {
-                console.log("Adding 0 to res array because all rules is false")
-                console.log("Array elements: " + array[i] + " " + array[j] + " " + array[j+1])
+                console.log('Adding 0 to res array because all rules is false')
+                console.log('Array elements: ' + array[i] + ' ' + array[j] + ' ' + array[j+1])
                 resultArray.push(0)
             }
             i++

@@ -4,7 +4,7 @@
  */
 
 
-let matrixSize = prompt("Matrix Size: ")
+let matrixSize = prompt('Matrix Size: ')
 
 // Определяем пустые массивы для передачи в функцию
 let array1 = []
